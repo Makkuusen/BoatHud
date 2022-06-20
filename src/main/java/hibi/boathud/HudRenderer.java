@@ -79,7 +79,7 @@ public class HudRenderer {
 
 			// Sprites
 			// Left-right
-			this.drawTexture(stack, i - 20, this.scaledHeight - 55, 61, this.client.options.leftKey.isPressed() ? 38 : 30, 17, 8);
+			this.drawTexture(stack, i - 21, this.scaledHeight - 55, 61, this.client.options.leftKey.isPressed() ? 38 : 30, 17, 8);
 			this.drawTexture(stack, i + 3, this.scaledHeight - 55, 79, this.client.options.rightKey.isPressed() ? 38 : 30, 17, 8);
 			// Brake-throttle bar
 			this.drawTexture(stack, i, this.scaledHeight - 45, 0, this.client.options.forwardKey.isPressed() ? 45 : 40, 61, 5);
