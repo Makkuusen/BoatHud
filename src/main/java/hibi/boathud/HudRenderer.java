@@ -78,11 +78,11 @@ extends DrawableHelper {
 			this.renderBar(stack, i - 91, this.scaledHeight - 61);
 
 			// Left-right
-			this.drawTexture(stack, i - 20, this.scaledHeight - 55, 61, this.client.options.leftKey.isPressed() ? 38 : 30, 17, 8);
-			this.drawTexture(stack, i + 3, this.scaledHeight - 55, 79, this.client.options.rightKey.isPressed() ? 38 : 30, 17, 8);
+			this.drawTexture(stack, i - 20, this.scaledHeight - 55, 61, this.client.options.keyLeft.isPressed() ? 38 : 30, 17, 8);
+			this.drawTexture(stack, i + 3, this.scaledHeight - 55, 79, this.client.options.keyRight.isPressed() ? 38 : 30, 17, 8);
 			// Brake-throttle bar
-			this.drawTexture(stack, i, this.scaledHeight - 45, 0, this.client.options.forwardKey.isPressed() ? 45 : 40, 61, 5);
-			this.drawTexture(stack, i - 61, this.scaledHeight - 45, 0, this.client.options.backKey.isPressed() ? 35 : 30, 61, 5);
+			this.drawTexture(stack, i, this.scaledHeight - 45, 0, this.client.options.keyForward.isPressed() ? 45 : 40, 61, 5);
+			this.drawTexture(stack, i - 61, this.scaledHeight - 45, 0, this.client.options.keyBack.isPressed() ? 35 : 30, 61, 5);
 
 			// Speed and drift angle
 			this.typeCentered(stack, String.format(Config.speedFormat, this.displayedSpeed * Config.speedRate), i - 58, this.scaledHeight - 54, 0xFFFFFF);
