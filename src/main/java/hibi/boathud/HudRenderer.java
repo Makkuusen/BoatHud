@@ -77,7 +77,6 @@ extends DrawableHelper {
 			this.drawTexture(stack, i - 91, this.scaledHeight - 61, 0, 50, 182, 20);
 			this.renderBar(stack, i - 91, this.scaledHeight - 61);
 
-			// Sprites
 			// Left-right
 			this.drawTexture(stack, i - 20, this.scaledHeight - 55, 61, this.client.options.leftKey.isPressed() ? 38 : 30, 17, 8);
 			this.drawTexture(stack, i + 3, this.scaledHeight - 55, 79, this.client.options.rightKey.isPressed() ? 38 : 30, 17, 8);
