@@ -79,15 +79,15 @@ public class HudRenderer {
 
 			// Sprites
 			// Left-right
-			this.drawTexture(stack, i - 21, this.scaledHeight - 55, 61, this.client.options.leftKey.isPressed() ? 38 : 30, 17, 8);
-			this.drawTexture(stack, i + 3, this.scaledHeight - 55, 79, this.client.options.rightKey.isPressed() ? 38 : 30, 17, 8);
+			graphics.drawTexture(WIDGETS_TEXTURE, i - 21, this.scaledHeight - 55, 61, this.client.options.leftKey.isPressed() ? 38 : 30, 17, 8);
+			graphics.drawTexture(WIDGETS_TEXTURE, i + 3, this.scaledHeight - 55, 79, this.client.options.rightKey.isPressed() ? 38 : 30, 17, 8);
 			// Brake-throttle bar
-			this.drawTexture(stack, i, this.scaledHeight - 45, 0, this.client.options.forwardKey.isPressed() ? 45 : 40, 61, 5);
-			this.drawTexture(stack, i - 61, this.scaledHeight - 45, 0, this.client.options.backKey.isPressed() ? 35 : 30, 61, 5);
+			graphics.drawTexture(WIDGETS_TEXTURE, i, this.scaledHeight - 45, 0, this.client.options.forwardKey.isPressed() ? 45 : 40, 61, 5);
+			graphics.drawTexture(WIDGETS_TEXTURE, i - 61, this.scaledHeight - 45, 0, this.client.options.backKey.isPressed() ? 35 : 30, 61, 5);
 
 			// Speed and drift angle
-			this.typeCentered(stack, String.format(Config.speedFormat, this.displayedSpeed * Config.speedRate), i - 58, this.scaledHeight - 54, 0xFFFFFF);
-			this.typeCentered(stack, String.format(Config.angleFormat, Common.hudData.driftAngle), i + 58, this.scaledHeight - 54, 0xFFFFFF);
+			this.typeCentered(graphics, String.format(Config.speedFormat, this.displayedSpeed * Config.speedRate), i - 58, this.scaledHeight - 54, 0xFFFFFF);
+			this.typeCentered(graphics, String.format(Config.angleFormat, Common.hudData.driftAngle), i + 58, this.scaledHeight - 54, 0xFFFFFF);
 
 
 		}
